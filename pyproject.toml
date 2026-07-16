@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "symmetry-resolve"
+version = "0.1.0"
+description = "Recolector y puntuador de tickets rentables para Symmetry."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Proprietary" }
+authors = [
+  { name = "Symmetry Solutions" }
+]
+dependencies = []
+
+[project.scripts]
+resolve = "resolve_scout.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["resolve_scout*"]

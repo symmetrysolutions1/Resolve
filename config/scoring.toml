@@ -1,0 +1,67 @@
+[market]
+min_reward_usd = 30.0
+max_reward_usd = 300.0
+min_expected_hourly_usd = 15.0
+max_elapsed_hours = 24.0
+fast_track_reward_usd = 100.0
+fast_track_hours = 2.0
+
+[[effort.tiers]]
+max_reward_usd = 50.0
+max_effort_hours = 2.0
+
+[[effort.tiers]]
+max_reward_usd = 100.0
+max_effort_hours = 5.0
+
+[[effort.tiers]]
+max_reward_usd = 250.0
+max_effort_hours = 14.0
+
+[[effort.tiers]]
+max_reward_usd = 300.0
+max_effort_hours = 17.0
+
+[acceptance_probability]
+contracted = 0.92
+assigned = 0.85
+open_race = 0.58
+contest = 0.25
+unknown = 0.40
+
+[competition_multiplier]
+zero = 1.00
+one = 0.60
+two = 0.35
+three_plus = 0.18
+
+[payment_probability]
+upwork = 0.95
+algora = 0.90
+taskbounty = 0.85
+onlydust = 0.90
+superteam = 0.82
+github = 0.65
+fiverr = 0.90
+contra = 0.90
+freelancer = 0.82
+manual = 0.70
+unknown = 0.60
+
+[platform_fee_rate]
+upwork = 0.10
+algora = 0.00
+taskbounty = 0.20
+onlydust = 0.00
+superteam = 0.00
+github = 0.00
+fiverr = 0.20
+contra = 0.00
+freelancer = 0.10
+manual = 0.00
+unknown = 0.00
+
+[gates]
+min_scope_clarity = 0.65
+reject_active_competing_pr = true
+require_funded_contract = true

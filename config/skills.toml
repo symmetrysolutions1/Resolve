@@ -1,0 +1,43 @@
+[skills]
+primary = [
+  "python",
+  "automation",
+  "api",
+  "webhook",
+  "playwright",
+  "javascript",
+  "typescript",
+  "react",
+  "next.js",
+  "sql",
+  "postgresql",
+  "supabase",
+  "solidity",
+  "foundry"
+]
+
+expansion = [
+  "wordpress",
+  "woocommerce",
+  "php",
+  "shopify",
+  "liquid",
+  "n8n",
+  "zapier",
+  "make",
+  "google sheets",
+  "scraping",
+  "csv",
+  "pdf",
+  "docker",
+  "github actions",
+  "qa",
+  "testing"
+]
+
+avoid = [
+  "native ios",
+  "native android",
+  "unity",
+  "3d modeling"
+]
