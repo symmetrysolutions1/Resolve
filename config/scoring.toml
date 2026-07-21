@@ -1,7 +1,7 @@
 [market]
 min_reward_usd = 30.0
-max_reward_usd = 300.0
-min_expected_hourly_usd = 15.0
+max_reward_usd = 3000.0
+min_expected_hourly_usd = 10.0
 max_elapsed_hours = 24.0
 fast_track_reward_usd = 100.0
 fast_track_hours = 2.0
@@ -21,6 +21,14 @@ max_effort_hours = 14.0
 [[effort.tiers]]
 max_reward_usd = 300.0
 max_effort_hours = 17.0
+
+[[effort.tiers]]
+max_reward_usd = 1000.0
+max_effort_hours = 32.0
+
+[[effort.tiers]]
+max_reward_usd = 3000.0
+max_effort_hours = 80.0
 
 [acceptance_probability]
 contracted = 0.92

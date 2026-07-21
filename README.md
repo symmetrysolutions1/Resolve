@@ -1,9 +1,9 @@
 # Resolve
 
 Resolve es el sistema operativo de Symmetry para encontrar, evaluar y ejecutar
-tickets pequeños y medianos con una meta mínima de USD 15 por hora esperada.
+tickets pequeños y medianos con una meta mínima de USD 10 por hora esperada.
 
-El rango inicial es USD 30 a USD 300. El sistema no confunde premio publicado
+El rango operativo inicial es USD 30 a USD 3000. El sistema no confunde premio publicado
 con ingreso probable: descuenta comisiones, riesgo de pago, competencia y horas
 totales de entrega.
 
@@ -102,8 +102,8 @@ La métrica central es:
 
 El resultado es SKIP cuando ocurre al menos una de estas condiciones:
 
-- Recompensa fuera de USD 30 a USD 300.
-- Valor esperado inferior a USD 15 por hora.
+- Recompensa fuera de USD 30 a USD 3000.
+- Valor esperado inferior a USD 10 por hora.
 - Alcance insuficientemente claro.
 - Esfuerzo superior al tope permitido por premio.
 - Ticket cerrado o asignado a otra persona.
@@ -127,6 +127,8 @@ en config/skills.toml.
 | Hasta USD 100 | 5 horas |
 | Hasta USD 250 | 14 horas |
 | Hasta USD 300 | 17 horas |
+| Hasta USD 1000 | 32 horas |
+| Hasta USD 3000 | 80 horas |
 
 El deadline puede ser de 24 horas, pero no significa trabajar 24 horas. El
 margen restante se reserva para instalación, pruebas, revisión y correcciones.
@@ -187,3 +189,20 @@ preflight y métricas de rentabilidad.
 
 La separación entre este repositorio y un futuro root empresarial de Resolve se
 documenta en docs/SYMMETRY_ROOT_INTEGRATION.md.
+
+## OpenAI Build Week 2026
+
+Resolve was prepared for OpenAI Build Week as a developer tool for filtering
+real paid work before committing engineering time. Codex and GPT-5.6 were used
+to design the scoring model, validate opportunity risk, inspect suspicious
+client-provided code without executing it, and convert daily market scans into
+repeatable operating rules.
+
+For judges, the quickest test path is:
+
+    python -m resolve_scout doctor
+    python -m unittest discover -s tests -v
+    python -m resolve_scout score --input data/scans/2026-07-21-manual-scan.json --output data/runs/2026-07-21-manual
+
+The project intentionally keeps authenticated marketplace intake manual until
+an official API or authorized connector is available.
