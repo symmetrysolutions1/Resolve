@@ -26,7 +26,7 @@ or paid opportunities once setup is complete.
 | Devpost | Hackathons and project submissions | OpenAI Build Week submissions visible as submitted | 100% active for hackathons | Not a normal ticket marketplace, but useful for prize opportunities and portfolio signals. |
 | PeoplePerHour | Freelance jobs | Logged in as Symmetry / `symmetry-enterprises-zxwnaqxq`; seller application exists and is open; job title, bio, and GBP 12/h rate were drafted | 70-75% in activation | Logo upload and English language selection were reached in the browser session, but final application submission still needs confirmation. Add/confirm skills, confirm Cali location, then submit. Count as a Resolve target platform; not usable for proposals until activation is accepted. |
 | Contra | Freelance services / portfolio | Signup verified for `symmetrysolutions1@gmail.com`; onboarding in progress | 55-60% in activation | One-liner was drafted. Platform requires profile photo before account creation can finish. Then finish profile/services/payout. Count as a Resolve target platform. |
-| Fiverr | Freelance gigs | Logged in as `symmetryent`; seller onboarding profile has About text plus JavaScript and Python skills saved | 65-70% in activation | Still blocked by required title and language fields that remained readonly/unstable in automation. Finish those manually, then continue to create the first gig. Count as a Resolve target platform; not usable for seller income until a gig is live. |
+| Fiverr | Freelance gigs | Logged in as `symmetryent`; seller onboarding profile has About text, English language, JavaScript/Python skills, Symmetry work experience, and two certifications saved | 85-90% in activation | Validation now blocks only on the required title field, which appears as a readonly/unstable input in the browser session. Add the title manually, then continue to create the first gig. Count as a Resolve target platform; not usable for seller income until a gig is live. |
 | Freelancer | Freelance jobs | `@symmetryEnt` onboarding completed; profile details, English language, birthdate, Symmetry experience, and skills are active; project search is visible with matching filters | 90% active | Payment verification and paid membership were skipped. Work discovery/proposals are available; configure payment only when needed for receiving funds. |
 
 ## Not active / deprioritized
@@ -55,7 +55,7 @@ stronger security track record and stricter scope control.
 3. Check Algora for fresh, unclaimed bounties and validate GitHub issue state.
 4. Check Superteam for crypto opportunities, but reject contests/grants unless the payout path and odds are clear.
 5. Use IssueHunt for micro-tickets when the ticket is open, payable, safe, and has no PR competitor or assigned solver.
-6. Continue finishing PeoplePerHour, Contra, Fiverr, and Freelancer until each profile is usable.
+6. Continue finishing PeoplePerHour, Contra, and Fiverr until each profile is usable.
 7. Keep Devpost and similar hackathons as prize/portfolio opportunities, not the daily ticket pipeline.
 
 ## Preflight before working any ticket

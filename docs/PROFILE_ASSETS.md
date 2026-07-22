@@ -142,12 +142,22 @@ removed just because the profile is incomplete.
 ### Fiverr
 
 - Complete seller profile with Symmetry branding.
-- Required manual/unstable fields still pending:
+- Required manual/unstable field still pending:
   - Title: `AI, Blockchain & Automation Developer`.
-  - Language: English, preferably Fluent.
 - Already filled:
   - About section.
+  - Language: English / Fluent.
   - Skills: JavaScript (Pro), Python (Intermediate).
+  - Work experience: Founder & Technical Lead, Self Employed, May 2023 -
+    Present, with Symmetry technical delivery description.
+  - Certifications:
+    - TIC Cybersecurity for Business: Digital Asset Protection and Compliance
+      (2026).
+    - SENA Smart Industry: Data Analytics for Technology Transformation
+      (2025).
+- Education was not saved because Fiverr's graduation-year selector only
+  allowed current/past years and Alejandro's Universidad del Valle program is
+  expected through 2028. Do not falsify this field.
 - Create first gig around a scoped service, preferably:
   `I will fix bugs and build small automations in Python or JavaScript`.
 - Add two more gigs after the first is accepted:
