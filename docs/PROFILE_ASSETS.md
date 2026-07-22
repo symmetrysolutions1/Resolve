@@ -110,3 +110,49 @@ are allowed when they can build cash flow, reputation, portfolio proof, or
 platform history. Do not start work when the payout path is unclear, the issue is
 already assigned, a competing PR is active, the repository looks unsafe, or the
 task requires upfront capital.
+
+## Pending profile completion checklist
+
+These platforms remain in Resolve's operating pipeline. They should not be
+removed just because the profile is incomplete.
+
+### PeoplePerHour
+
+- Confirm logo/profile image is visible.
+- Confirm title: `AI, Blockchain & Automation Developer`.
+- Confirm bio from this document.
+- Add up to 15 skills: Python, JavaScript, TypeScript, React, Next.js, Node.js,
+  API Integration, Automation, Solidity, Blockchain, PostgreSQL, Web
+  Development, Supabase, Technical Documentation, Artificial Intelligence.
+- Confirm language: English.
+- Confirm location: Cali, Colombia.
+- Confirm hourly rate: GBP 12/h.
+- Submit application and wait for approval.
+
+### Contra
+
+- Upload Symmetry logo as profile image.
+- Use one-liner: `AI, blockchain and automation studio`.
+- Add services around automation, web apps, blockchain integrations, Supabase,
+  and technical delivery.
+- Add portfolio projects: Resolve, LazosTech, E14 Public Audit, Symmetry
+  Enterprise.
+- Complete payout only when the platform requires it for receiving payments.
+
+### Fiverr
+
+- Complete seller profile with Symmetry branding.
+- Create first gig around a scoped service, preferably:
+  `I will fix bugs and build small automations in Python or JavaScript`.
+- Add two more gigs after the first is accepted:
+  - Supabase/PostgreSQL integration and dashboards.
+  - Smart contract / Web3 integration review.
+- Do not buy promotions or services upfront.
+
+### Freelancer
+
+- Keep `@symmetryEnt`.
+- Add skills: Web Development, Python, JavaScript, React.js, Node.js, API,
+  Automation, Blockchain, Solidity, PostgreSQL, Artificial Intelligence.
+- Continue onboarding until work browsing/proposals are available.
+- Configure payment only when required to receive funds.

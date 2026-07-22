@@ -8,11 +8,12 @@ use it for work discovery or applications.
 Last verification: July 2026, from the Symmetry Chrome session and public
 GitHub/Devpost checks.
 
-## Active now
+## Active operating pipeline
 
-These are the only platforms that currently count as operational for Resolve.
-They are not all perfect, but each one can be used now for discovery,
-applications, invitations, submissions, or ticket preflight.
+These are the platforms that count for Resolve. Some are already usable today;
+others are still in profile/onboarding completion, but they remain in the
+operating pipeline because they can produce tickets, freelance work, bounties,
+or paid opportunities once setup is complete.
 
 | Platform | Use | Account/profile status | Operational status | Notes |
 |---|---|---|---|---|
@@ -23,15 +24,10 @@ applications, invitations, submissions, or ticket preflight.
 | Algora | Open-source bounties and dev opportunities | Logged in as `symmetrysolutions1` / SymmetryEnterprise | 80-85% active | Profile exists. Can browse bounty/job opportunities. Resume/preferences and payout details should be completed before serious payouts. |
 | Superteam Earn | Crypto/web3 bounties, grants, jobs | Logged in as Alejandro | 75-80% active | Homepage shows "Welcome back, Alejandro" and current bounties/projects/grants. Strong source for crypto opportunities, but many listings are contests, grants, region-restricted, or require capital. |
 | Devpost | Hackathons and project submissions | OpenAI Build Week submissions visible as submitted | 100% active for hackathons | Not a normal ticket marketplace, but useful for prize opportunities and portfolio signals. |
-
-## Pending confirmation / setup
-
-| Platform | Intended use | Current observed state | Next action |
-|---|---|---|---|
-| PeoplePerHour | Freelance jobs | Logged in as Symmetry / `symmetry-enterprises-zxwnaqxq`; seller application exists and is open; job title, bio, and GBP 12/h rate were drafted | Add profile photo/logo, skills, language, location confirmation, and submit application. Do not count as active until application is accepted or work browsing/proposals are available. |
-| Fiverr | Freelance gigs | Logged in as `symmetryent`; buyer/client dashboard accessible; seller onboarding reached | Complete seller profile, verify manually if required, create first gigs. Do not count as active until seller profile and at least one gig are live. |
-| Contra | Freelance services / portfolio | Signup verified for `symmetrysolutions1@gmail.com`; onboarding in progress | One-liner was drafted. Platform requires profile photo before account creation can finish. Then finish profile/services/payout. |
-| Freelancer | Freelance jobs | Signup/onboarding reached skills step | Select skills manually, finish profile and payment settings. Do not count as active until proposals/work discovery are available. |
+| PeoplePerHour | Freelance jobs | Logged in as Symmetry / `symmetry-enterprises-zxwnaqxq`; seller application exists and is open; job title, bio, and GBP 12/h rate were drafted | 70-75% in activation | Logo upload and English language selection were reached in the browser session, but final application submission still needs confirmation. Add/confirm skills, confirm Cali location, then submit. Count as a Resolve target platform; not usable for proposals until activation is accepted. |
+| Contra | Freelance services / portfolio | Signup verified for `symmetrysolutions1@gmail.com`; onboarding in progress | 55-60% in activation | One-liner was drafted. Platform requires profile photo before account creation can finish. Then finish profile/services/payout. Count as a Resolve target platform. |
+| Fiverr | Freelance gigs | Logged in as `symmetryent`; buyer/client dashboard accessible; seller onboarding reached | 45-55% in activation | Complete seller profile, verify manually if required, create first gigs. Count as a Resolve target platform; not usable for seller income until a gig is live. |
+| Freelancer | Freelance jobs | Signup/onboarding reached skills step; `@symmetryEnt` visible; Web Development skill selected | 50-55% in activation | Add remaining skills manually, then continue profile/payment setup. Count as a Resolve target platform; not usable for proposals until onboarding is complete. |
 
 ## Not active / deprioritized
 
@@ -59,8 +55,8 @@ stronger security track record and stricter scope control.
 3. Check Algora for fresh, unclaimed bounties and validate GitHub issue state.
 4. Check Superteam for crypto opportunities, but reject contests/grants unless the payout path and odds are clear.
 5. Use IssueHunt for micro-tickets when the ticket is open, payable, safe, and has no PR competitor or assigned solver.
-6. Do not count PeoplePerHour/Fiverr/Contra/Freelancer in daily operations until activation/profile setup is complete.
-8. Keep Devpost and similar hackathons as prize/portfolio opportunities, not the daily ticket pipeline.
+6. Continue finishing PeoplePerHour, Contra, Fiverr, and Freelancer until each profile is usable.
+7. Keep Devpost and similar hackathons as prize/portfolio opportunities, not the daily ticket pipeline.
 
 ## Preflight before working any ticket
 
