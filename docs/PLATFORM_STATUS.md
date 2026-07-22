@@ -16,6 +16,9 @@ GitHub/Devpost checks.
 | Algora | Open-source bounties and dev opportunities | Logged in as `symmetrysolutions1` / SymmetryEnterprise | Active | Profile exists. Can browse bounty/job opportunities. Resume/preferences and payout details should be completed before serious payouts. |
 | Opire | Open-source bounties | Logged in as `symmetrysolutions1` | Active | Dashboard and bounty list visible. Good source for unclaimed and priced issues; still requires per-ticket preflight before working. |
 | Superteam Earn | Crypto/web3 bounties, grants, jobs | Logged in as Alejandro | Active | Homepage shows "Welcome back, Alejandro" and current bounties/projects/grants. Strong source for crypto opportunities, but many listings are contests, grants, region-restricted, or require capital. |
+| PeoplePerHour | Freelance jobs | Logged in as Symmetry / `symmetry-enterprises-zxwnaqxq` | Partial active | Seller application exists and is open. Job title, bio, and rate were drafted; profile still needs manual skills, language, location confirmation, and application submission. |
+| Fiverr | Freelance gigs | Logged in as `symmetryent` | Partial active | Buyer/client dashboard is accessible. Seller activation is blocked by human verification. |
+| IssueHunt | Open-source bounties | Public scan works; GitHub OAuth pending for `symmetrysolutions1` | Scan active, account pending | Funded issues can be scanned without login. OAuth requests `user:email`, `public_repo`, and `read:org`; user must approve manually if account access is desired. |
 | GitHub | Source, issue validation, portfolio, public repos | `symmetrysolutions1/Resolve` public; `testigosdigitalesCOL/presidencia2026-2` public | Active | Resolve is the operating repo. E14 is visible for hackathon review. |
 | Devpost | Hackathons and project submissions | OpenAI Build Week submissions visible as submitted | Active for hackathons | Not a normal ticket marketplace, but useful for prize opportunities and portfolio signals. |
 
@@ -23,11 +26,8 @@ GitHub/Devpost checks.
 
 | Platform | Intended use | Current observed state | Next action |
 |---|---|---|---|
-| Contra | Freelance services / portfolio | Not logged in; public homepage shows Sign up / Log in | Log in or create account, then publish services and payout setup. |
-| Fiverr | Freelance gigs | Dashboard URL partially loaded but automation could not verify; previously showed human/bot verification | Complete human verification manually, then confirm seller profile/gigs. |
-| Freelancer | Freelance jobs | Redirected to login | Create/login account, complete profile, verify payment method before applying. |
-| PeoplePerHour | Freelance jobs | Public login/home pages visible; no active session confirmed | Create/login account, complete freelancer profile, verify payout path. |
-| IssueHunt | Open-source bounties | Public funded-issues list visible without login; GitHub sign-in still pending | Low priority. Public list has mostly small rewards and many PRs; sign in only if we find a worthwhile issue. |
+| Contra | Freelance services / portfolio | Signup started with `symmetrysolutions1@gmail.com`; verification code sent | Enter email code manually, then finish profile/services/payout. |
+| Freelancer | Freelance jobs | Signup page shows Google option for `symmetrysolutions1@gmail.com`, but click did not advance in automation | Continue manually with Google or create account with Symmetry email, then complete profile/payment. |
 
 ## Not active / deprioritized
 
@@ -54,9 +54,10 @@ stronger security track record and stricter scope control.
 2. Check Opire for priced issues with zero solvers.
 3. Check Algora for fresh, unclaimed bounties and validate GitHub issue state.
 4. Check Superteam for crypto opportunities, but reject contests/grants unless the payout path and odds are clear.
-5. Use IssueHunt only as a low-priority public scan source.
-6. Use Contra/Fiverr/Freelancer/PeoplePerHour only after profiles are complete.
-7. Keep Devpost and similar hackathons as prize/portfolio opportunities, not the daily ticket pipeline.
+5. Use IssueHunt as a public scan source; account login is optional until a promising issue appears.
+6. Use PeoplePerHour/Fiverr only after seller/applicant activation is complete.
+7. Use Contra/Freelancer only after email/OAuth signup and profile setup are complete.
+8. Keep Devpost and similar hackathons as prize/portfolio opportunities, not the daily ticket pipeline.
 
 ## Preflight before working any ticket
 
