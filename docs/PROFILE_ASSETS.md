@@ -142,6 +142,12 @@ removed just because the profile is incomplete.
 ### Fiverr
 
 - Complete seller profile with Symmetry branding.
+- Required manual/unstable fields still pending:
+  - Title: `AI, Blockchain & Automation Developer`.
+  - Language: English, preferably Fluent.
+- Already filled:
+  - About section.
+  - Skills: JavaScript (Pro), Python (Intermediate).
 - Create first gig around a scoped service, preferably:
   `I will fix bugs and build small automations in Python or JavaScript`.
 - Add two more gigs after the first is accepted:
@@ -152,7 +158,12 @@ removed just because the profile is incomplete.
 ### Freelancer
 
 - Keep `@symmetryEnt`.
-- Add skills: Web Development, Python, JavaScript, React.js, Node.js, API,
-  Automation, Blockchain, Solidity, PostgreSQL, Artificial Intelligence.
-- Continue onboarding until work browsing/proposals are available.
+- Active profile/onboarding completed with:
+  - Headline: `AI, Blockchain & Automation Developer`.
+  - Professional summary.
+  - English language.
+  - Symmetry Enterprises experience from June 2023.
+  - Skills including Web Development, Python, JavaScript, React.js, Node.js,
+    API Development, Automation, Blockchain, Solidity, and Foundry.
+- Work browsing/proposals are available.
 - Configure payment only when required to receive funds.
