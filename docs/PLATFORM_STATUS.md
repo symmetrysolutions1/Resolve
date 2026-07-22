@@ -16,9 +16,9 @@ GitHub/Devpost checks.
 | Algora | Open-source bounties and dev opportunities | Logged in as `symmetrysolutions1` / SymmetryEnterprise | Active | Profile exists. Can browse bounty/job opportunities. Resume/preferences and payout details should be completed before serious payouts. |
 | Opire | Open-source bounties | Logged in as `symmetrysolutions1` | Active | Dashboard and bounty list visible. Good source for unclaimed and priced issues; still requires per-ticket preflight before working. |
 | Superteam Earn | Crypto/web3 bounties, grants, jobs | Logged in as Alejandro | Active | Homepage shows "Welcome back, Alejandro" and current bounties/projects/grants. Strong source for crypto opportunities, but many listings are contests, grants, region-restricted, or require capital. |
-| PeoplePerHour | Freelance jobs | Logged in as Symmetry / `symmetry-enterprises-zxwnaqxq` | Partial active | Seller application exists and is open. Job title, bio, and rate were drafted; profile still needs manual skills, language, location confirmation, and application submission. |
+| PeoplePerHour | Freelance jobs | Logged in as Symmetry / `symmetry-enterprises-zxwnaqxq` | Partial active | Seller application exists and is open. Job title, bio, and GBP 12/h rate were drafted; profile still needs manual profile photo, skills, language, location confirmation, and application submission. |
 | Fiverr | Freelance gigs | Logged in as `symmetryent` | Partial active | Buyer/client dashboard is accessible. Seller activation is blocked by human verification. |
-| IssueHunt | Open-source bounties | Public scan works; GitHub OAuth pending for `symmetrysolutions1` | Scan active, account pending | Funded issues can be scanned without login. OAuth requests `user:email`, `public_repo`, and `read:org`; user must approve manually if account access is desired. |
+| IssueHunt | Open-source bounties | Logged in as `symmetrysolutions1` | Active | Funded issues can be scanned and account settings were saved with JavaScript, TypeScript, Python, and Solidity skills. Many rewards are small, so prioritize micro-ticket economics. |
 | GitHub | Source, issue validation, portfolio, public repos | `symmetrysolutions1/Resolve` public; `testigosdigitalesCOL/presidencia2026-2` public | Active | Resolve is the operating repo. E14 is visible for hackathon review. |
 | Devpost | Hackathons and project submissions | OpenAI Build Week submissions visible as submitted | Active for hackathons | Not a normal ticket marketplace, but useful for prize opportunities and portfolio signals. |
 
@@ -26,7 +26,7 @@ GitHub/Devpost checks.
 
 | Platform | Intended use | Current observed state | Next action |
 |---|---|---|---|
-| Contra | Freelance services / portfolio | Signup started with `symmetrysolutions1@gmail.com`; verification code sent | Enter email code manually, then finish profile/services/payout. |
+| Contra | Freelance services / portfolio | Signup verified for `symmetrysolutions1@gmail.com`; onboarding in progress | One-liner was drafted. Platform requires profile photo before account creation can finish. Then finish profile/services/payout. |
 | Freelancer | Freelance jobs | Signup page shows Google option for `symmetrysolutions1@gmail.com`, but click did not advance in automation | Continue manually with Google or create account with Symmetry email, then complete profile/payment. |
 
 ## Not active / deprioritized
@@ -54,7 +54,7 @@ stronger security track record and stricter scope control.
 2. Check Opire for priced issues with zero solvers.
 3. Check Algora for fresh, unclaimed bounties and validate GitHub issue state.
 4. Check Superteam for crypto opportunities, but reject contests/grants unless the payout path and odds are clear.
-5. Use IssueHunt as a public scan source; account login is optional until a promising issue appears.
+5. Use IssueHunt for micro-tickets when reward/time math works and no PR competitor is active.
 6. Use PeoplePerHour/Fiverr only after seller/applicant activation is complete.
 7. Use Contra/Freelancer only after email/OAuth signup and profile setup are complete.
 8. Keep Devpost and similar hackathons as prize/portfolio opportunities, not the daily ticket pipeline.
@@ -71,3 +71,18 @@ Before starting work, Resolve must confirm:
 - no upfront capital required unless explicitly approved;
 - expected hourly value meets the current floor;
 - scope is clear enough to deliver without unpaid discovery.
+
+## Micro-ticket rule
+
+Low rewards are not automatically rejected. A USD 5-40 reward can be useful when
+it is genuinely small, has no active competing PR, requires no setup rabbit hole,
+and can be completed fast enough to preserve the expected hourly floor.
+
+For micro-tickets, the target pattern is:
+
+- USD 5-10 only if it is a 10-20 minute fix;
+- USD 15-25 only if it is under 45 minutes;
+- USD 30-40 only if it is under 90 minutes;
+- no active PR competitor;
+- no unclear maintainer approval path;
+- no complex local environment unless the repo setup is already known.
