@@ -74,15 +74,20 @@ Before starting work, Resolve must confirm:
 
 ## Micro-ticket rule
 
-Low rewards are not automatically rejected. A USD 5-40 reward can be useful when
-it is genuinely small, has no active competing PR, requires no setup rabbit hole,
-and can be completed fast enough to preserve the expected hourly floor.
+Low rewards are not automatically rejected. A USD 1-40 reward can be useful when
+the issue is real, open, payable, and simple enough for us to solve without
+turning it into unpaid discovery.
 
-For micro-tickets, the target pattern is:
+Resolve should not reject micro-tickets only because the reward is small. The
+decision is based on operational fit:
 
-- USD 5-10 only if it is a 10-20 minute fix;
-- USD 15-25 only if it is under 45 minutes;
-- USD 30-40 only if it is under 90 minutes;
-- no active PR competitor;
-- no unclear maintainer approval path;
-- no complex local environment unless the repo setup is already known.
+- issue/ticket is still open;
+- payout path is visible;
+- no active PR competitor or assigned solver;
+- repo is safe to inspect;
+- scope is clear enough to attempt;
+- no upfront capital required;
+- we can stop quickly if setup or scope becomes messy.
+
+Small rewards are allowed as practice, portfolio, reputation, and cash-flow
+opportunities.
