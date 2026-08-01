@@ -1,0 +1,9 @@
+{
+  "urn": "urn:li:dataset:(urn:li:dataPlatform:s3,symmetry.environmental_observations,PROD)",
+  "name": "environmental_observations",
+  "owners": ["urn:li:corpuser:environmental-reviewer"],
+  "upstreams": ["urn:li:dataset:(urn:li:dataPlatform:s3,symmetry.raw_satellite_observations,PROD)"],
+  "schema_fields": ["observation_id", "captured_at", "latitude", "longitude", "risk_score", "source_uri"],
+  "custom_properties": {"region": "CO", "retention": "7 years"}
+}
+
