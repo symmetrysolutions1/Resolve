@@ -1,0 +1,36 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Resolve Memory Agent on AWS Lambda with CockroachDB memory
+
+Parameters:
+  DatabaseUrl:
+    Type: String
+    NoEcho: true
+
+Resources:
+  ResolveMemoryFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Handler: resolve_memory_agent.web.lambda_handler
+      Runtime: python3.12
+      Timeout: 20
+      MemorySize: 512
+      Environment:
+        Variables:
+          DATABASE_URL: !Ref DatabaseUrl
+      FunctionUrlConfig:
+        AuthType: NONE
+        Cors:
+          AllowOrigins:
+            - '*'
+          AllowMethods:
+            - GET
+            - POST
+          AllowHeaders:
+            - content-type
+
+Outputs:
+  ResolveMemoryUrl:
+    Value: !GetAtt ResolveMemoryFunctionUrl.FunctionUrl
+
