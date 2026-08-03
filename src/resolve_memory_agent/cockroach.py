@@ -2,9 +2,11 @@ from __future__ import annotations
 
 import json
 import os
+import ssl
 import time
 from contextlib import contextmanager
 from typing import Any, Iterator
+from urllib.parse import unquote, urlparse
 
 
 SCHEMA = """
@@ -34,18 +36,35 @@ class CockroachMemoryStore:
 
     @contextmanager
     def _connection(self) -> Iterator[Any]:
-        import psycopg
+        import pg8000.dbapi
 
-        with psycopg.connect(self.database_url) as connection:
-            yield connection
+        parsed = urlparse(self.database_url)
+        if parsed.scheme not in {"postgres", "postgresql"} or not parsed.hostname:
+            raise ValueError("DATABASE_URL must be a PostgreSQL connection URL")
+        connection = pg8000.dbapi.connect(
+            user=unquote(parsed.username or ""),
+            password=unquote(parsed.password or ""),
+            host=parsed.hostname,
+            port=parsed.port or 26257,
+            database=(parsed.path or "/defaultdb").lstrip("/") or "defaultdb",
+            ssl_context=ssl.create_default_context(),
+        )
+        cursor = connection.cursor()
+        try:
+            yield cursor
+            connection.commit()
+        except Exception:
+            connection.rollback()
+            raise
+        finally:
+            cursor.close()
+            connection.close()
 
     def initialize(self) -> None:
         with self._connection() as connection:
             connection.execute(SCHEMA)
 
     def remember(self, case: dict[str, Any], event: dict[str, Any]) -> None:
-        import psycopg
-
         for attempt in range(self.max_retries):
             try:
                 with self._connection() as connection:
@@ -72,20 +91,21 @@ class CockroachMemoryStore:
                         ),
                     )
                 return
-            except psycopg.errors.SerializationFailure:
-                if attempt + 1 == self.max_retries:
+            except Exception as exc:
+                if getattr(exc, "sqlstate", None) != "40001" or attempt + 1 == self.max_retries:
                     raise
                 time.sleep(0.05 * (2**attempt))
 
     def recall(self, case_id: str) -> dict[str, Any] | None:
         with self._connection() as connection:
-            row = connection.execute(
+            connection.execute(
                 """
                 SELECT case_id::STRING, status, evidence_sha256, findings, decided_at
                 FROM resolve_cases WHERE case_id = %s
                 """,
                 (case_id,),
-            ).fetchone()
+            )
+            row = connection.fetchone()
         if row is None:
             return None
         return {
@@ -95,16 +115,16 @@ class CockroachMemoryStore:
 
     def history(self, case_id: str) -> list[dict[str, Any]]:
         with self._connection() as connection:
-            rows = connection.execute(
+            connection.execute(
                 """
                 SELECT event_id::STRING, kind, payload, created_at
                 FROM resolve_memory_events
                 WHERE case_id = %s ORDER BY created_at ASC
                 """,
                 (case_id,),
-            ).fetchall()
+            )
+            rows = connection.fetchall()
         return [
             {"id": row[0], "kind": row[1], "payload": row[2], "created_at": row[3].isoformat()}
             for row in rows
         ]
-

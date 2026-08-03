@@ -11,7 +11,7 @@ Resources:
   ResolveMemoryFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: .
+      CodeUri: src
       Handler: resolve_memory_agent.web.lambda_handler
       Runtime: python3.12
       Timeout: 20
@@ -33,4 +33,3 @@ Resources:
 Outputs:
   ResolveMemoryUrl:
     Value: !GetAtt ResolveMemoryFunctionUrl.FunctionUrl
-
