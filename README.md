@@ -25,6 +25,32 @@ pública estable. Esas oportunidades entran mediante JSON o CSV hasta construir
 un conector oficial o autorizado. Esta decisión evita cuentas bloqueadas y
 recolectores que dejan de funcionar ante cualquier cambio visual.
 
+## Servicios de resolución consolidados
+
+Este repositorio también contiene dos servicios especializados que antes vivían
+en repositorios separados. Sus historiales, dependencias y pruebas se conservan
+en sus propios directorios:
+
+- `services/resolve-memory-agent/`: resolución de evidencia con memoria durable
+  en CockroachDB y despliegue AWS Lambda mediante SAM.
+- `services/resolve-lineage-agent/`: resolución de evidencia con contexto de
+  ownership, esquema y lineage de DataHub.
+
+Cada servicio mantiene su propio `pyproject.toml`, código fuente, ejemplos,
+plantilla de despliegue y suite de pruebas. La integración es de repositorio,
+no una mezcla de dominios: el producto principal continúa siendo `resolve_scout`
+y los agentes funcionan como capacidades especializadas de Resolve.
+
+Pruebas de los servicios:
+
+```bash
+cd services/resolve-memory-agent
+PYTHONPATH=src python -m unittest discover -s tests -v
+
+cd ../resolve-lineage-agent
+PYTHONPATH=src python -m unittest discover -s tests -v
+```
+
 ## Inicio rápido
 
 Requiere Python 3.11 o superior.

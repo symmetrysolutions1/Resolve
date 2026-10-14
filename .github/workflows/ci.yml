@@ -30,3 +30,15 @@ jobs:
 
       - name: Offline demo
         run: python -m resolve_scout demo --output .artifacts/demo
+
+      - name: Memory agent compile and tests
+        working-directory: services/resolve-memory-agent
+        run: |
+          python -m compileall -q src
+          PYTHONPATH=src python -m unittest discover -s tests -v
+
+      - name: Lineage agent compile and tests
+        working-directory: services/resolve-lineage-agent
+        run: |
+          python -m compileall -q src
+          PYTHONPATH=src python -m unittest discover -s tests -v
