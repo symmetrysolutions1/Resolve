@@ -1,0 +1,6 @@
+{
+  "dataset_urn": "urn:li:dataset:(urn:li:dataPlatform:s3,symmetry.environmental_observations,PROD)",
+  "claimed_fields": ["observation_id", "unregistered_confidence"],
+  "observations": []
+}
+

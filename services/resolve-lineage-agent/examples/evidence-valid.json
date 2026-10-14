@@ -1,0 +1,13 @@
+{
+  "dataset_urn": "urn:li:dataset:(urn:li:dataPlatform:s3,symmetry.environmental_observations,PROD)",
+  "claimed_fields": ["observation_id", "captured_at", "risk_score", "source_uri"],
+  "observations": [
+    {
+      "observation_id": "obs-co-001",
+      "captured_at": "2026-08-01T15:00:00Z",
+      "risk_score": 0.82,
+      "source_uri": "s3://symmetry-demo/observations/obs-co-001.json"
+    }
+  ]
+}
+
